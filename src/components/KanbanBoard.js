@@ -131,7 +131,7 @@ const KanbanBoard = () => {
             <div className="column-header">
               <h2>
                 {getColumnIcon(group)} {/* Display icon */}
-                {group} {groupedTickets[group].length} {/* Count of cards */}
+                <span className="column-heading" >{group}</span> <span className="column-count" >{groupedTickets[group].length}</span> {/* Count of cards */}
               </h2>
               <div className="header-buttons">
                 <AddIcon className="header-icon" />
